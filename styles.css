@@ -311,7 +311,7 @@ border:1px solid #000;
 }
 .parallax {
     /* The image used */
-    background-image: url('D:/Labs/Laba3/content/ducatiwallpaper1.jpg');
+    background-image: url('content/ducatiwallpaper1.jpg');
     grid-column-start: 1;
   grid-column-end: 3;
     /* Full height */
