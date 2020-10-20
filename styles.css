@@ -1,0 +1,555 @@
+body{
+     font-family: Arial, Helvetica, sans-serif;
+     
+    color: #fff;
+    background-color: #262626;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #262626; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+header{
+    top:0px;
+width: 100%;
+background-color: #262626;
+margin: 0px;
+    z-index: 100;
+    position: fixed;
+}
+nav {
+    position: sticky;
+    left: 0px;
+    top:0px;
+    z-index: 1000;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #262626;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+   
+    padding: .5rem 1rem;
+
+}
+.flexNav-1{
+    flex:0;
+   
+}
+.flexNav-2{
+    padding: 10px;
+    flex:1;
+}
+.flexNav-3{
+    padding: 10px;
+    flex:0;
+}
+.flexNav-4{
+    
+    padding: 10px;
+    flex:0;
+}
+.stickylogo{
+    display:flex;
+    position: sticky;
+    height: 100px;
+    transition: 1s cubic-bezier(0, 0, 1, 1) 100ms;
+  top: 30px;
+}
+.hidefooter
+{
+    display: none;
+}
+.hidesome
+{
+    height: 100px;
+    border: 0;
+    padding: 0;
+    top:-100px;
+    overflow: hidden;
+}
+.stickylogo div{
+    width: 42%;
+    margin: 20px;
+    border-top: 2px solid black ;
+    margin-top: 45px;
+    
+
+}
+.stickylogo img{
+  
+   
+}
+
+.menubut{
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.burger-menu_nav{
+    position:fixed;
+    display: flex;
+    flex-flow: column;
+    top:55px;
+    transition: 1s;
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    overflow-y: auto;
+    left:-100%;
+}
+.burger-menu_active
+{
+    top:58px;
+left:0;
+overflow-block: auto;
+}
+.burger-menu_link
+{
+    padding: 0%;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+.burger-menu_nav .search
+{
+    width: auto;
+}
+.activeInput
+{
+    height: 32px;
+    display: inline;
+    left: inherit;
+    margin-top: 15px;
+    margin-left: 10px;
+    position: fixed;
+    background-color: #262626;
+    color: #fff;
+    outline: 0;
+    border: 0px;
+    padding: 0%;
+    z-index: 1000;
+    transition: 0.5s;
+    border-bottom: 1px solid white;
+}
+.burger-menu_search
+{
+    top: -200px;
+    position: fixed;
+    z-index: 0;
+}
+.burger-menu_nav img
+{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 1px;
+}
+.stickylogohide
+{
+overflow: hidden;
+}
+.burger-menu_link:hover
+{
+    filter: brightness(0.7);
+}
+.burger-menu_subsection_mobile
+    {
+        display: none;
+    }
+.burger-menu_subsection
+{
+    z-index: 10;
+    background: #262626;
+    bottom: 0px;
+    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-top: 20px;    
+    left: 0px;
+    position: sticky;
+}
+.burger-menu_nav a:hover{
+    filter: brightness(0.7);
+
+}
+.sub_content
+{
+    text-decoration: none;
+    color: #fff;
+}
+.sub_content-spaces::after
+{
+    content: "|";
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+.ducati-wallpaper
+{
+height: 800px;
+left:0px ;
+top:100px;
+width: 100%;
+height: 100%;
+}
+.wallpaper{
+    z-index: 0;
+}
+.actualParagraph
+{
+    margin-top: 50px;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+}
+.grid-news div:hover
+{
+    border: 1px solid black;
+}
+
+.grid-news
+{
+    margin-top: 20px;
+    display: flex;
+    top:70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 0px;
+}
+.grid-news div{
+    border: 1px solid #262626;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    cursor: pointer;
+    height: 300px;
+    font-size: 30px;
+    text-align: center;
+}
+.cataloggrid
+{
+    display: grid;
+    grid-template-columns: auto auto ;
+    width: 100%;
+    grid-row-gap: 25px;
+margin-top: 100px;
+
+}
+.catalog{
+    text-align: center; 
+}
+.catalog-link{
+  
+
+    text-decoration: none;
+    border: 1px solid #262626;
+padding-bottom: 5px;
+    color: white;
+    outline: 0px;
+}
+.catalog-link:hover 
+{
+border:1px solid #000;
+}
+.catalog img 
+{
+    height: 1%;
+    height: 200px;
+
+}
+.parallax {
+    /* The image used */
+    background-image: url('D:/Labs/Laba3/content/ducatiwallpaper1.jpg');
+    grid-column-start: 1;
+  grid-column-end: 3;
+    /* Full height */
+    height: 250px; 
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.footer{
+    border-top:1px solid #333 ;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.grid-footer-title
+{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+
+}
+.footer-sub-title-column1 .footer-sub-title-column2 .footer-sub-title-column3 .footer-sub-title-column4
+{
+    text-decoration: none;
+}
+.grid-footer
+{
+    position: inherit;
+    display: flex;
+    text-decoration: none;
+    font-size: 14px  ;
+    color: #fff;
+    width: 100%;
+}
+.grid-footer:hover
+{
+    filter: brightness(0.7);
+}
+.grid-footer-title:hover
+{
+    filter: brightness(0.7);
+}
+.buttonText {  
+    position: fixed;
+    background: black;
+    border: 2px solid #eee;
+    height: 30px;
+    width: 30px;
+    margin: 50px 0 0 50px;
+    padding: 0 0 0 7px;
+    overflow: hidden;
+    display: block;
+    /*Скругленные углы*/
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+/*Переход*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+
+  }  
+#button1
+{
+    right: 15px;
+      bottom: 100px;
+}
+#button2
+{
+    right: 15px;
+      bottom: 140px;
+}#button3
+{
+    right: 15px;
+      bottom: 180px;
+}
+  .imgroll
+  {
+      padding-top: 5px;
+      width: 20px;
+      height: 20px;
+  }
+  .buttonhover {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 230px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+#menuButton
+{
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+    width: 40px;
+    height: 120px;
+}
+#menuButton:hover
+{
+    width: 230px;
+}
+@media only screen and (max-width: 900px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+     
+        color: #fff;
+        background-color: #262626;
+    }
+    header{
+        top:0px;
+    width: 100%;
+    background-color: #262626;
+    margin: 0px;
+        z-index: 100;
+        position: fixed;
+    }
+    nav {
+        position: sticky;
+        left: 0px;
+        top:0px;
+        z-index: 1000;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #262626;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+       
+        padding: .5rem 1rem;
+    
+    }
+    .cataloggrid
+    {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+
+    }
+    .parallax{
+        display: none;
+    }
+    #menubutton
+    {
+        display: none;
+    }
+    .buttonText
+    {
+        display: none;
+    }
+    .grid-news{
+        display: block;
+    }
+    .grid-news div{
+    height: 100%;
+    }
+    .cataloggrid
+    {
+        margin-top: 20px;
+    }
+    .cataloggrid img
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .grid-footer-title
+    {
+        position: relative;
+        z-index: 10;
+        font-size:1em;
+    }
+    .stickylogo
+    {
+        display: none;
+    }
+    .grid-footer
+    {
+        
+        display: none;
+    }
+    .footer
+    {
+       
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .burger-menu_link
+    {
+        padding: 0%;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        font-size: 1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .burger-menu_subsection_mobile
+    {
+        display: flex;
+    }
+    .burger-menu_subsection
+    {
+        display: none;
+    }
+
+    .sub_content-spaces::after
+    {
+        display: none;
+    }
+    .sub_content
+    {
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        
+    }
+    .burger-menu_nav
+    {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+
+  }
