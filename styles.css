@@ -534,7 +534,6 @@ transition: All 0.5s ease;
     {
         display: flex;
         flex-direction: row;
-       
     }
     .burger-menu_subsection
     {
@@ -555,7 +554,7 @@ transition: All 0.5s ease;
     }
     .burger-menu_nav
     {
-        height: auto;
+        height: 93%;
         display: flex;
         flex-direction: column;
         overflow-y: auto;
